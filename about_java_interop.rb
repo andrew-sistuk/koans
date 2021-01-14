@@ -14,7 +14,7 @@ include Java
 class AboutJavaInterop < Neo::Koan
   def test_using_a_java_library_class
     java_array = java.util.ArrayList.new
-    assert_equal __, java_array.class
+    assert_equal ArrayList, java_array.class
   end
 
   def test_java_class_can_be_referenced_using_both_ruby_and_java_like_syntax
